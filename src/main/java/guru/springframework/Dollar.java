@@ -24,4 +24,9 @@ public class Dollar {
         return new Dollar(amount / divide);
     }
 
+    public boolean equals(Object object) {
+        Dollar dollar = (Dollar) object;
+        return amount == dollar.amount;
+    }
+
 }
