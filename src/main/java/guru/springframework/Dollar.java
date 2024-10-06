@@ -8,20 +8,20 @@ public class Dollar {
         this.amount = amount;
     }
 
-    public void times(int multiplier) {
-        amount *= multiplier;
+    public Dollar times(int multiplier) {
+        return new Dollar(amount * multiplier);
     }
 
-    public void minus(int subtract) {
-        amount -= subtract;
+    public Dollar minus(int subtract) {
+        return new Dollar(amount - subtract);
     }
 
-    public void plus(int add) {
-        amount += add;
+    public Dollar plus(int add) {
+        return new Dollar(amount + add);
     }
 
-    public void divide(int divide) {
-        amount /= divide;
+    public Dollar divide(int divide) {
+        return new Dollar(amount / divide);
     }
 
 }
