@@ -3,9 +3,7 @@ package guru.springframework;
 import lombok.Getter;
 
 @Getter
-public class Frank {
-
-    private final int amount;
+public class Frank extends Currency {
 
     public Frank(int amount) {
         this.amount = amount;
@@ -27,8 +25,4 @@ public class Frank {
         return new Frank(amount / divide);
     }
 
-    public boolean equals(Object object) {
-        Frank frank = (Frank) object;
-        return amount == frank.amount;
-    }
 }
